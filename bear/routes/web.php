@@ -21,12 +21,9 @@ use Illuminate\Support\Str;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
 Route::get('/', function () {
     return view('index');
 });
-
 Route::get('/', function () {
     if (Auth::user()) {
 
@@ -40,13 +37,11 @@ Route::get('/', function () {
         return view("/login");
     }
 });
-
 Route::get("/logout", function () {
     Session::flush();
     Auth::logout();
     return Redirect('login');
 });
-
 Route::view("/login", "login");
 Route::post("/login", function (Request $request) {
     if (Auth::attempt($request->only('email', 'password')))
@@ -59,7 +54,6 @@ Route::post("/register", function (Request $request) {
     User::create($request->all());
     return redirect("login");
 });
-
 Route::view("/create", "create");
 Route::post("/create", function (Request $request) {
     if (!Auth::check() || (Auth::check() and Auth::user()->role != 2))
@@ -72,10 +66,7 @@ Route::post("/create", function (Request $request) {
     Singer::create($request->all());
     return redirect('index');
 });
-
 Route::get('/index', function () {
     $singers = Singer::all();
     return view('index', compact("singers"));
 });
-
-
