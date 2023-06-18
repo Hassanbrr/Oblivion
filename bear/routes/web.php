@@ -77,3 +77,5 @@ Route::get('/index', function () {
     $singers = Singer::all();
     return view('index', compact("singers"));
 });
+
+
