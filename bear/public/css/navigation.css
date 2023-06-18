@@ -1,0 +1,126 @@
+@import url(./singer-data.css);
+@import url(./footer.css);
+@import url(./cards.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "Amatic SC", cursive;
+   
+    height: 100vh;
+}
+header {
+    height: 100%;
+    background-color: #a5c9ca;
+}
+.navigation {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.navigation > h1 {
+    color: #2c3333;
+    font-size: 45px;
+    transition: 400ms all;
+}
+.navigation > h1:hover {
+    color: #da0037;
+    transition: 400ms all;
+    cursor: pointer;
+}
+.nav ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 200px 0 0;
+    list-style: none;
+}
+.nav ul li > a {
+    color: #2c3333;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 400ms all;
+}
+.nav ul li > a:hover {
+    color: #da0037;
+    cursor: pointer;
+    transition: 400ms all;
+    text-decoration: none;
+}
+.brands {
+    width: 150px;
+    transition: 500ms all;
+    display: flex;
+    justify-content: space-between;
+}
+.brands > a {
+    color: #2c3333;
+    font-size: 20px;
+    transition: 500ms all;
+}
+/* .brand-2{
+  width: 10px;
+  height: 17.5px;
+  padding-bottom: 5px;
+  padding-right: 18px;
+} */
+.brands > a > .brand-1:hover {
+    color: #7dc7ee;
+    border-radius: 50%;
+    transition: 500ms all;
+}
+.brands > a > .brand-2:hover {
+    border-radius: 6px;
+    height: 18px;
+    color: white;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+}
+.brands > a > .brand-3:hover {
+    color: #1dd05d;
+    transition: 500ms all;
+}
+
+.brands > a > .brand-4:hover {
+    color: #f74902;
+    transition: 500ms all;
+}
+.hero {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.intro {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    color: #e7f6f2;
+    background-color: #6d9eab;
+    font-size: 20px;
+}
+
+.intro > p {
+    width: 500px;
+}
