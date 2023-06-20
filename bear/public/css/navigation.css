@@ -10,7 +10,7 @@
 body {
     width: 100%;
     font-family: "Amatic SC", cursive;
-   
+
     height: 100vh;
 }
 header {
@@ -82,14 +82,8 @@ header {
     border-radius: 6px;
     height: 18px;
     color: white;
-    background: radial-gradient(
-        circle at 33% 100%,
-        #fed373 4%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf
-    );
+    color: #da0037;
+    transition: 500ms;
 }
 .brands > a > .brand-3:hover {
     color: #1dd05d;
