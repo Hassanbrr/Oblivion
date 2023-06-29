@@ -18,23 +18,27 @@
 
         <div class="row">
             <div class="col-12">
-                <form action="{{ route('store') }}" method="POST" enctype="multipart/form-data">
+                <form action="/update/{{ $singers->id }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
+                    <h1>Edit</h1>
                     <div class="form-group mb-3">
-                        <label for="exampleInputEmail1">title</label>
-                        <input name="title" type="text" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter email">
-
+                        <label for="exampleInputEmail1"></label>
+                        <input value="{{ $singers->title }}" name="title" type="text" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
                     <div class="form-group">
 
-                        <textarea name="description" class="form-control"></textarea>
+                        <textarea name="description" class="form-control">{{ $singers->description }}</textarea>
                     </div>
                     <div class="mb-3 form-control">
                         <label for="exampleInputEmail1" class="form-control">chose the image</label>
                         <input name="imagefile" type="file" class="form-control" id="exampleCheck1">
+                        <p><img src="{{ url('/uploads/' . $singers->image) }}"width="100px" height="100px"></p>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Edit</button>
                 </form>
             </div>
         </div>

@@ -8,11 +8,8 @@
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li>
-                    @if (Auth::user() != null && Auth::user()['role'] == 2)
-                        <a href="/create">Create</a>
-                    @endif
-                </li>
+                <li><a href="/logout"">Logout</a></li>
+
             </ul>
         </nav>
         <div class="brands">

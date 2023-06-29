@@ -50,6 +50,31 @@
 }
 .card-content > a:hover {
     color: #e7f6f2;
+
     transition: 500ms all;
     background-color: #2c3333;
+}
+.crud {
+    width: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.btn-crud {
+    text-decoration: none;
+    text-align: center;
+    
+    color: #e7f6f2;
+    transition: 500ms all;
+}
+.btn-crud:hover {
+    color: #2c3333;
+    transition: 500ms all;
+}
+.delete{
+    background-color:red ;
+}
+.create{
+    font-size: 50px;
 }
