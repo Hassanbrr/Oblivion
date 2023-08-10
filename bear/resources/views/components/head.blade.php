@@ -6,9 +6,8 @@
     {{-- ! Css link --}}
     <link href="{{ asset('/css/navigation.css') }}" rel="stylesheet">
 
-    {{-- !materialize link  --}}
 
-    <link href="{{ asset('/css/materialize.css') }}" rel="stylesheet">
+
     {{-- !font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,24 +1,29 @@
 <header>
-    <div class="navigation">
+    <div class="navig">
         <h1>Oblivion</h1>
-        <nav class="nav">
+        <nav class="navi">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="/logout"">Logout</a></li>
 
             </ul>
         </nav>
-        <div class="brands">
-            <a href=""><i class="brand-1 fa-brands fa-telegram"></i></a>
-            <a href="#"> <i class="brand-2 fa-brands fa-instagram"></i></a>
-            <a href=""> <i class="brand-3 fa-brands fa-spotify"></i></a>
-            <a href="https://soundcloud.com/user-244941876-419399618"><i
-                    class="brand-4 fa-brands fa-soundcloud"></i></a>
-        </div>
+       
+       @if (Auth::user() != null)
+         @foreach ($users as $user)
+         <div class="user-profile">
+            <img src="{{ url('/profile-user/' . $user->image) }}" alt="">
+            <h3>{{$user->name}}</h3>
+            {{-- <i>{{}}</i> --}}
+           </div>
+         @endforeach
+       @else
+           
+       @endif
+       
     </div>
     <section class="hero">
         <div class="intro">

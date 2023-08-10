@@ -73,12 +73,13 @@
 
 <body>
 
-    <img src="{{ asset('img/candy01.jpg') }}" alt="">
-    <form action="/register" method="POST">
+    <img src="{{ asset('img/candy01.jpg') }}" alt="" >
+    <form action="/register" method="POST" enctype="multipart/form-data">
         <h1>Register</h1>
         @csrf
         <input type="text" name="email" placeholder="email" required />
         <input type="text" name="name" placeholder="Name" required />
+        <input type="file" name="image" required />
         <input type="password" name="password" placeholder="Password" required />
         <input type="submit" value="Register" class="s">
     </form>
