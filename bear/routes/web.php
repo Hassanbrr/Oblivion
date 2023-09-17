@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-//create read update destroy for singers 
+//create read update destroy for singers
 Route::resource('/', SingerController::class)->parameters(['singer' => 'id']);
 Route::get('/edit/{id}', [SingerController::class, "edit"]);
 Route::put('/update/{id}', [SingerController::class, "update"]);
@@ -30,6 +30,7 @@ Route::delete('/destroy/{id}', [SingerController::class, "destroy"]);
 
 Route::view('login',     'login');
 Route::view('register',  'register');
+
 
 Route::get('index',  [MyAuthController::class, 'index']);
 Route::get('logout', [MyAuthController::class, 'logout']);
