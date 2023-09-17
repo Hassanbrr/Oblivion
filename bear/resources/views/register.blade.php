@@ -80,7 +80,6 @@
         @csrf
         <input type="text" name="email" placeholder="email" required />
         <input type="text" name="name" placeholder="Name" required />
-       
         <input type="password" name="password" placeholder="Password" required />
         <input type="submit" value="Register" class="s">
     </form>
