@@ -76,7 +76,7 @@
     <form action="/login" method="POST">
         <h1>LOGIN</h1>
         @csrf
-
+        {{ Session::get('msg') ?? '' }}
         <input type="email" name="email" placeholder="email" required />
         <input type="password" name="password" placeholder="Password" required />
         <input class="submit" type="submit" value="Login" />

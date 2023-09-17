@@ -73,12 +73,14 @@
 
 <body>
 
-    <img src="{{ asset('img/candy01.jpg') }}" alt="">
-    <form action="/register" method="POST">
+    <img src="{{ asset('img/candy01.jpg') }}" alt="" >
+    <form action="/register" method="POST" >
         <h1>Register</h1>
+        {{ Session::get('msg') ?? '' }}
         @csrf
         <input type="text" name="email" placeholder="email" required />
         <input type="text" name="name" placeholder="Name" required />
+       
         <input type="password" name="password" placeholder="Password" required />
         <input type="submit" value="Register" class="s">
     </form>

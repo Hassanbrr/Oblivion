@@ -3,9 +3,14 @@
 @include('components.head')
 
 <body>
-    @include('components.header')
-    @include('components.cards')
-    @include('components.footer')
+    @guest
+        @include('login')
+    @else
+        @include('components.header')
+        @include('components.cards')
+        @include('components.footer')
+    @endguest
+
 </body>
 
 </html>

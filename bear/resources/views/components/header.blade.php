@@ -1,14 +1,14 @@
 <header>
-    <div class="navigation">
+    <div class="navig">
         <h1>Oblivion</h1>
-        <nav class="nav">
+        <nav class="navi">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="/logout"">Logout</a></li>
+                <li><a href="/logout">Log Out</a></li>
 
             </ul>
         </nav>
@@ -18,7 +18,9 @@
             <a href=""> <i class="brand-3 fa-brands fa-spotify"></i></a>
             <a href="https://soundcloud.com/user-244941876-419399618"><i
                     class="brand-4 fa-brands fa-soundcloud"></i></a>
+
         </div>
+
     </div>
     <section class="hero">
         <div class="intro">

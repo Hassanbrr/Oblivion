@@ -23,7 +23,7 @@
                     <div class="form-group mb-3">
                         <label for="exampleInputEmail1">title</label>
                         <input name="title" type="text" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter email">
+                            aria-describedby="emailHelp" placeholder="Enter Title">
 
                     </div>
                     <div class="form-group">
@@ -34,7 +34,7 @@
                         <label for="exampleInputEmail1" class="form-control">chose the image</label>
                         <input name="imagefile" type="file" class="form-control" id="exampleCheck1">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Create</button>
                 </form>
             </div>
         </div>
